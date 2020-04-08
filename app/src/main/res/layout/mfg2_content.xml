@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/title_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="等 级"
+            android:textColor="@color/bg_black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/title_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="设 备"
+            android:textColor="@color/bg_black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/title_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="状 态"
+            android:textColor="@color/bg_black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/title_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="时 间"
+            android:textColor="@color/bg_black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="8"
+    android:textColor="@android:color/holo_blue_light"
+    android:textSize="24sp"
+    tools:layout_editor_absoluteX="8dp" />
+
+</LinearLayout>

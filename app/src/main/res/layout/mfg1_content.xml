@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/time"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="277dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_weight="1"
+        app:srcCompat="@mipmap/timg" />
+
+    <Button
+        android:id="@+id/button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:background="@android:color/transparent"
+        android:text="●监测点1"
+        android:textColor="#d9b72525"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="-120dp"
+        android:layout_toStartOf="@+id/button_9"
+        android:background="@android:color/transparent"
+        android:text="●监测点2"
+        android:textColor="#d9b72525"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_3"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_alignTop="@+id/button_2"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:text="●监测点3"
+        android:textColor="#d9b72525"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_4"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button_2"
+        android:layout_marginEnd="44dp"
+        android:background="@android:color/transparent"
+        android:text="●监测点4"
+        android:textColor="#d9b72525"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_5"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button_2"
+        android:layout_marginBottom="213dp"
+        android:background="@android:color/transparent"
+        android:text="●监测点5"
+        android:textColor="#d9b72525"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_6"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_alignTop="@+id/button_5"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:text="●监测点6"
+        android:textColor="#d9b72525"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_7"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_alignStart="@+id/button_4"
+        android:layout_alignTop="@+id/button_5"
+        android:background="@android:color/transparent"
+        android:text="●监测点7"
+        android:textColor="#d9b72525"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_8"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="166dp"
+        android:background="@android:color/transparent"
+        android:text="●监测点8"
+        android:textColor="#d9b72525"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_9"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/button_8"
+        android:layout_marginStart="95dp"
+        android:background="@android:color/transparent"
+        android:text="●监测点9"
+        android:textColor="#d9b72525"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_10"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_alignTop="@+id/button_8"
+        android:layout_toEndOf="@+id/button_9"
+        android:background="@android:color/transparent"
+        android:text="●监测点10"
+        android:textColor="#d9b72525"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_11"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button_8"
+        android:layout_marginEnd="13dp"
+        android:background="@android:color/transparent"
+        android:text="●监测点11"
+        android:textColor="#d9b72525"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="黄河护坡监测系统"
+        android:textColor="#d9138de4"
+        android:textSize="36sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/time_2"
+        android:layout_width="237dp"
+        android:layout_height="42dp"
+        android:layout_alignEnd="@+id/button_11"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="21dp"
+        android:text="time"
+        android:textColor="#d9000910"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_alignTop="@+id/time_2"
+        android:layout_toStartOf="@+id/time_2"
+        android:text="当前时间："
+        android:textColor="#d9000910"
+        android:textSize="18sp" />
+
+</RelativeLayout>

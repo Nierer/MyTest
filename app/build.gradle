@@ -1,0 +1,104 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.example.mytest"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+//        ndk {
+//
+//            //选择要添加的对应cpu类型的.so库
+//
+//            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a'
+//
+//            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+//
+//        }
+//
+//        manifestPlaceholders=[
+//                XG_ACCESS_ID:"2100332866",
+//                XG_ACCESS_KEY:"A48TP6H8S8YY",
+//        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //    //完整的信鸽依赖三个都必须有，如果发生依赖冲突请根据对应的依赖版本号选择高版本的依赖。（使用jcenter自动接入请确认libs 中没有信鸽的相关jar包）
+
+    //
+
+    ////是否需要信鸽采集安装列表 自行二选一
+
+    //
+
+    ////采集安装列表
+
+    //
+
+    //    compile 'com.tencent.xinge:xinge:3.1.2-a-alpha'
+
+    //
+
+    ////不采集安装列表
+
+    //
+
+    //    compile 'com.tencent.xinge:xinge:3.1.2-b-alpha'
+
+    //
+
+    ////wup包
+
+    //
+
+    //    compile 'com.tencent.wup:wup:1.0.0.E-alpha'
+
+    //
+
+    ////mid包
+
+    //
+
+    //    compile 'com.tencent.mid:mid:3.9.0-alpha'
+
+    //
+
+    ////
+
+    ////            如果在添加以上 abiFilter 配置之后android Studio出现以下提示：
+
+    ////
+
+    ////    NDK integration is deprecated in the current plugin. Consider trying the new experimental plugin.
+
+    ////
+
+    ////            则在 Project 根目录的gradle.properties文件中添加：
+
+    ////
+
+    ////    android.useDeprecatedNdk=true
+    implementation files('libs/mysql-connector-java-5.1.30-bin.jar')
+    implementation files('libs/fastjson-1.2.49.jar')
+}
